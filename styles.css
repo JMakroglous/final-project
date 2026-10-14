@@ -52,11 +52,14 @@ NAV BAR
 nav {
     display: flex;
     padding-top: 32px;
+    width: 100%;
 }
 
 .nav__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .nav__logo {
