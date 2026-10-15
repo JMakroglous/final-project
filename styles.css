@@ -131,11 +131,23 @@ filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%
     border-radius: 999px;
 }
 
-.Nav__logo--title {
+.nav__logo--title {
     font-size: 24px;
     font-weight: 900;
 }
 
 .nav__logo {
     gap: 8px;
+}
+
+/*
+
+HEADER
+
+*/
+
+header .row {
+    display: flex;
+    align-items: center
+    justify-content: space-between;
 }
