@@ -217,7 +217,7 @@ header {
 .header__email--btn {
     z-index: 2;
     margin: 8px;
-    height: calc(100% 16px);
+    height: calc(80%);
     border-radius: 500px;
     width: 160px;
     border: none;
@@ -230,4 +230,16 @@ header {
 
 .header__customers--title {
     margin-bottom: 16px;
+    color: #a0aec0;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    padding: 48px;
+}
+
+.header__customers {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
