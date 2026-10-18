@@ -312,6 +312,7 @@ FEATURES
     margin: 0 16px;
     display: flex;
     align-items: flex-start;
+    gap: 24px;
 }
 
 .feature__img--wrapper {
