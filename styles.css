@@ -262,17 +262,14 @@ FEATURES
 */
 
 .feature {
-    max-width: 768px;
-    display: flex;
-    flex-wrap: wrap;
+    width: calc(100% /3);
     margin-top: 48px;
-    width: calc(50%);
 }
 
-#feature .row__narrow {
+#features .row__narrow {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
 }
 
 .section__tag {
@@ -303,11 +300,11 @@ FEATURES
 }
 
 .features {
-    max-width: 768px;
+    max-width: 1024px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
-    width: calc(50%);
+    width: 100%;
 }
 
 .feature__row {
