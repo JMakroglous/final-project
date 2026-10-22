@@ -753,6 +753,7 @@ section {
      rgba(0, 0, 0, 0) 0px 0px 0px 0px,
      rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
      rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+     z-index: 1;
 }
 
 .plan:nth-child(1)
@@ -974,7 +975,7 @@ button{
     position: absolute;
     left: 0;
     bottom: 0;
-    transform: translate(-25%, 25%)
+    transform: translate(-25%, 25%);
     height: 256px;
     width: 256px;
     opacity: 0.25;
