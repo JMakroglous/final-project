@@ -725,11 +725,10 @@ section {
 .plans {
     display: flex;
     flex-direction: row;
-    justify-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 32px;
     width: 100%;
-    align-items: center;
+    align-items: stretch;
 }
 
 .plan {
@@ -964,6 +963,18 @@ button{
     height: 0.5rem;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
+}
+
+.plans__blob {
+    z-index: -10;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-50%)
+    translateY(50%) scaleX(1) scaleY(1);
+    height: 256px;
+    width: 256px;
+    opacity: 0.25;
 }
 
 
