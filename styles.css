@@ -723,12 +723,13 @@ section {
 }
 
 .plans {
-    flex-direction: column;
-    align-items: center;
     display: flex;
-    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
     width: 100%;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .plan {
@@ -737,13 +738,12 @@ section {
     margin-top: 4rem;
     display: flex;
     width: 100%;
-    min-width: 24rem;
+    min-width: 0px;
+    max-width: 380px;
     flex-direction: column;
     border-radius: 0.5rem;
     background-color: rgb(255 255 255);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
+    padding: 32px 0 0;
     text-align: center;
     color: rgb(26 32 44);
     box-shadow:  rgba(0, 0, 0, 0) 0px 0px 0px 0px,
@@ -756,7 +756,7 @@ section {
 .plan__stripe {
     color: #f7fafc;
     background: linear-gradient(115deg,
-     rgb(56, 178,172) 0%
+     rgb(56, 178,172) 0%,
      rgb(129, 230, 217) 100%);
 }
 
@@ -815,15 +815,16 @@ section {
 }
 
 .plan__middle {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 0;
     display: flex;
-    flex: 1 1 0%;
+    flex: 1;
     flex-direction: column;
-    padding: 2rem;
+    padding: 32px;
+    border-top: 2px solid #e5e7eb;
+    border-bottom: 2px solid #e5e7eb;
 }
 
-.plan:nth-child(odd)
+.plan:nth-child(1)
 .plan__target {
     color: #1a202c;
 }
@@ -854,7 +855,7 @@ section {
 .plan__button {
     color: #f7fafc;
     background: linear-gradient(115deg,
-    rgb(57, 178, 172) 0%
+    rgb(57, 178, 172) 0%,
     rgb(129, 230,217) 100%);
 }
 
@@ -867,13 +868,104 @@ section {
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 0.875rem;
+    font-weight: bolder;
     text-transform: uppercase;
-    letter-spacing: 0.5em;
 }
 
 button{
     cursor: pointer;
     border: none;
 }
+
+.plan:nth-child(2) {
+    background: 
+    linear-gradient(135deg, rgb(76, 81, 191) 0%,
+     rgb(102, 126, 234) 100%);
+}
+
+.plan:nth-child(2)
+.plan__name {
+    color: #faf7fc;
+}
+
+.plan__name {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.625;
+}
+
+.plan__price {
+    font-size: 48px;
+    margin: 4px 0;
+    color: #faf7fc;
+}
+
+.plan__duration {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    line-height: 1.625;
+    color: #faf7fc;
+}
+
+.plan__target {
+    color: #f7fafc;
+}
+.plan:nth-child(2)
+.plan__feature {
+    color: #f7fafc;
+}
+
+.plan__button {
+    color: #243e63;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan:nth-child(3)
+.plan {
+    margin-right: 0px;
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    min-width: 24rem;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: rgb(255 255 255);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: rgb(25 32 44);
+    box-shadow: 
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.plan:nth-child(3)
+.plan__stripe  {
+    color: #f7fafc;
+    background: linear-gradient(115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%;
+}
+
+.plan__stripe {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+
 
 
