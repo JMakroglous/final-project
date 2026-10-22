@@ -724,8 +724,8 @@ section {
 
 .plans {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: stretch;
+    justify-content: row;
     flex-wrap: wrap;
     gap: 32px;
     width: 100%;
