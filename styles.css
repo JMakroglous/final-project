@@ -731,6 +731,8 @@ section {
     gap: 32px;
     width: 100%;
     align-items: stretch;
+    position: relative;
+    z-index: 0;
 }
 
 .plan {
