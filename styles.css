@@ -864,10 +864,9 @@ section {
 }
 
 .plan__button {
-    max-width: none;
-    padding: 0.75rem 2rem;
+    padding: 16px 36px;
     transition: all 300ms ease;
-    width: 100%;
+    width: 80%;
     border-radius: 9999px;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -971,14 +970,18 @@ button{
 }
 
 .plans__blob {
-    z-index: -1;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: -50px;
+    bottom: -70px;
     transform: translate(-25%, 25%);
     height: 256px;
     width: 256px;
     opacity: 0.25;
+    z-index: 0;
+}
+
+.plan__button:hover {
+    transform: scale(1.1);  
 }
 
 
