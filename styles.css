@@ -1237,8 +1237,8 @@ section {
     max-width: 1024px;
     padding: 0 32px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -1256,9 +1256,10 @@ section {
 .start__buttons {
     text-align: center;
     width: auto;
-    margin-top: 24px;
+    margin-top: 0;
     display: flex;
     justify-content: flex-end;
+    gap: 16px;
 }
 
 .start__button:nth-child(1) {
