@@ -182,10 +182,12 @@ header .row {
 }
 
 .header__description {
+     display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
     text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 45%;
+    min-width: 0px;
 
 }
 
@@ -196,7 +198,7 @@ h1 {
 }
 
 .header__img--wrapper {
-    width: 100%;
+    width: 55%;
     max-width: 512px;
     margin: 0 auto;
 }
@@ -217,9 +219,8 @@ header {
 }
 
 .header__description h1 {
-    margin-bottom: 24px;
-    font-size: 40px; 
-    align-items: left;
+   font-size: 40px;
+   margin-bottom: 24px;
 }
 
 .header__description--para {
@@ -1521,6 +1522,39 @@ RESPONSIVE
     }
 }
 
+@media (max-width:640px) {
+    .header__email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        height: auto;
+    }
+}
+
+
+@media (max-width:640px){
+   .header__email--input {
+    position: static; 
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    top: auto;
+    bottom: auto;
+    }
+}
+
+
+@media (max-width:640px) {
+    .header__email--btn {
+        width: 100%;
+        height: 56px;
+        margin: 0;
+    }
+}
+
+
 @media (max-width: 1024px) {
     .header__description {
         text-align: center;
@@ -1732,6 +1766,50 @@ header .row {
   color: #f7fafc;
   border-radius: 500px;
   border: none;
+}
+
+@media (max-width: 640px) {
+    .header__description {
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header__description h1 {
+        font-size: 30px;
+    }
+
+    .header__description--para {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header__img--wrapper {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 48px;
+    }
+
+    .header__email {
+        width: 100%;
+    }
+
+    .header__email--input {
+        position: static;
+        width: 100%;
+        height: 56px;
+        padding: 16px;
+        text-align: center;
+        box-sizing: border-box;
+        top: auto;
+        bottom: auto;
+    }
+
+    .header__email--btn {
+        width: 120px;
+        flex-shrink: 0;
+    }
 }
 
 
