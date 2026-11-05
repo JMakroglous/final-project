@@ -1538,7 +1538,7 @@ RESPONSIVE
     }
 }
 
-@media(max-width: 1280px) {
+@media(max-width: 1024px) {
     header .row {
         flex-direction:column;
         align-items: center;
